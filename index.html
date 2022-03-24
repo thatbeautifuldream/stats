@@ -5,16 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        background-color: #ffffff;
+        color: white;
+      }
+      .light-mode {
+        background-color: #1e1e1e;
+        color: white;
+      }
+    </style>
     <title>GitHub Stats</title>
   </head>
   <body>
     <div align="center">
-      <a href="http://gh.milind.live" target="_blank">
+      <a onclick="darkMode()" target="_blank">
         <img
           src="https://milind.live/thatbeautifuldream/github-metrics.svg"
           alt="stats-svg"
         />
       </a>
     </div>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("light-mode");
+      }
+      // #1e1e1e
+    </script>
   </body>
 </html>
